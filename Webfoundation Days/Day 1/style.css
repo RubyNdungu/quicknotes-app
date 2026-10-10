@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f9; /* A light grey background helps the white cards stand out */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background-color: #ffffff; 
+  color: purple; /* Custom purple font colour requested */
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #eaeaea; /* Optional: separates header from the rest of the page */
+}
+
+/* 2. Navigation Bar (Flexbox) */
+nav ul {
+  display: flex;
+  justify-content: center; /* Centres the links horizontally */
+  gap: 30px; /* Adds space between each link */
+  list-style: none; /* Removes default bullet points */
+  padding: 15px 0;
+}
+
+nav a {
+  text-decoration: none; /* Removes underlines from links */
+  color: purple;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline; /* Visual feedback when hovering over links */
+}
+
+/* 3. Centring <main> and styling <section> as white cards */
+main {
+  max-width: 900px; /* Restricts the width so it doesn't stretch too far on large screens */
+  margin: 40px auto; /* 40px top/bottom margin, 'auto' perfectly centres it left and right */
+  padding: 0 20px; /* Prevents the content from touching the edges on small phone screens */
+}
+
+section {
+  background-color: white; /* Gives the card look */
+  padding: 30px;
+  margin-bottom: 30px; /* Space between each section */
+  border-radius: 8px; /* Rounds the corners slightly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft drop shadow behind the card */
+}
+
+/* 4. Features List Grid */
+.features-list {
+  display: grid;
+  /* This creates responsive columns that automatically wrap on smaller screens */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px; /* Space between the grid items */
+  list-style: none;
+  margin-top: 20px;
+}
+
+/* Giving the individual feature items a subtle inner card look */
+.features-list li {
+  background-color: #fcfcfc;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  text-align: center;
+}
+/* 1. Reset and Base Body Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f9; /* A light grey background helps the white cards stand out */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background-color: #ffffff; 
+  color: purple; /* Custom purple font colour requested */
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #eaeaea; /* Optional: separates header from the rest of the page */
+}
+
+/* 2. Navigation Bar (Flexbox) */
+nav ul {
+  display: flex;
+  justify-content: center; /* Centres the links horizontally */
+  gap: 30px; /* Adds space between each link */
+  list-style: none; /* Removes default bullet points */
+  padding: 15px 0;
+}
+
+nav a {
+  text-decoration: none; /* Removes underlines from links */
+  color: purple;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline; /* Visual feedback when hovering over links */
+}
+
+/* 3. Centring <main> and styling <section> as white cards */
+main {
+  max-width: 900px; /* Restricts the width so it doesn't stretch too far on large screens */
+  margin: 40px auto; /* 40px top/bottom margin, 'auto' perfectly centres it left and right */
+  padding: 0 20px; /* Prevents the content from touching the edges on small phone screens */
+}
+
+section {
+  background-color: white; /* Gives the card look */
+  padding: 30px;
+  margin-bottom: 30px; /* Space between each section */
+  border-radius: 8px; /* Rounds the corners slightly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft drop shadow behind the card */
+}
+
+/* 4. Features List Grid */
+.features-list {
+  display: grid;
+  /* This creates responsive columns that automatically wrap on smaller screens */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px; /* Space between the grid items */
+  list-style: none;
+  margin-top: 20px;
+}
+
+/* Giving the individual feature items a subtle inner card look */
+.features-list li {
+  background-color: #fcfcfc;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  text-align: center;
+}
+How to use this with your HTML
+To ensure step 4 works perfectly, make sure the HTML for your features list (likely a <ul> tag) has the class features-list applied to it, like this:
+
+<ul class="features-list">
+
+How does auto-fit work?
+
+Yes
+
