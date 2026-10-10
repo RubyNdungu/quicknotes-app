@@ -147,12 +147,83 @@ section {
   border-radius: 6px;
   text-align: center;
 }
-How to use this with your HTML
-To ensure step 4 works perfectly, make sure the HTML for your features list (likely a <ul> tag) has the class features-list applied to it, like this:
+/* Form & Full Width Inputs */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
 
-<ul class="features-list">
+input, textarea {
+  width: 100%; /* Ensures they are full width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
 
-How does auto-fit work?
+/* Button & Hover Transitions */
+button {
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
 
-Yes
+button:hover {
+  background-color: #550055;
+  transform: translateY(-2px); 
+}
+
+/* Navigation Hover */
+nav a {
+  transition: color 0.3s ease; 
+}
+
+nav a:hover {
+  color: #ff00ff; 
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: purple;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Mobile Media Query */
+@media (max-width: 600px) {
+  header {
+    padding: 10px 0;
+  }
+  header h1 {
+    font-size: 24px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 
